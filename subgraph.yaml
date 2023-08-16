@@ -43,8 +43,7 @@ dataSources:
         - name: SoundEditionV1_2
           file: ./abis/ SoundEditionV1_2.json
       eventHandlers:
-        - event: Airdropped(address[],uint256,uint256)
-          handler: handleAirdropped
+       
         - event: Approval(indexed address,indexed address,indexed uint256)
           handler: handleApproval
         - event: ApprovalForAll(indexed address,indexed address,bool)
@@ -57,8 +56,6 @@ dataSources:
           handler: handleConsecutiveTransfer
         - event: ContractURISet(string)
           handler: handleContractURISet
-        - event: ERC20Withdrawn(address,address[],uint256[],address)
-          handler: handleERC20Withdrawn
         - event: ETHWithdrawn(address,uint256,address)
           handler: handleETHWithdrawn
         - event: EditionCutoffTimeSet(uint32)
